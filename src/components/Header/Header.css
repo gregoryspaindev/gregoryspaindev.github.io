@@ -1,4 +1,10 @@
-header {
+/* .header {
+  display: flex;
+} */
+
+.header_container {
   display: flex;
   justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
 }
