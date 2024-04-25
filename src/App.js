@@ -3,7 +3,11 @@ import './App.css';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
 import BasicTabs from './components/ProjectBox/ProjectBox.js';
+import DesignContent from './components/Design/Design.js';
+
 import { useState } from 'react';
+import DevContent from './components/Dev/Dev.js';
+import PrevExpContent from './components/PrevExp/PrevExp.js';
 
 const App = () => {
 
@@ -62,9 +66,9 @@ const App = () => {
         showDev={showDevHandler}
         showPrevExp={showPrevExpHandler} />
       {showHome && <BasicTabs />}
-      {showDesign && <BasicTabs />}
-      {showDev && <BasicTabs />}
-      {showPrevExp && <BasicTabs />}
+      {showDesign && <DesignContent />}
+      {showDev && <DevContent />}
+      {showPrevExp && <PrevExpContent />}
       <Footer />
     </div>
   );
