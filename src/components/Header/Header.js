@@ -1,6 +1,10 @@
 import './Header.css';
+import HeroImage from '../HeroImage/HeroImage.js';
 import logo from '../../assets/FinalLogo.svg'
-function Header() {
+
+
+function Header(props) {
+
   return (
     <header className='header'>
       <div className='header_container'>
@@ -8,11 +12,14 @@ function Header() {
           <img src={ logo } alt='logo for gs design and development' />
         </div>
         <div className='nav_container'>
-          <a href='#design' className='nav_design'>Design</a>
-          <a href='#dev' className='nav_dev'>Development</a>
-          <a href='#previous' className='nav_prev'>Previous Experience</a>
+          <ul className='nav_list'>
+            <li><input type='button' className='nav_design' onClick={props.showDesign} value={'Design'} /></li>
+            <li><input type='button' className='nav_dev' onClick={props.showDev} value={'Development'} /></li>
+            <li><input type='button' className='nav_prev' onClick={props.showPrevExp} value={'Previous Experience'} /></li>
+          </ul>
         </div>
       </div>
+      <HeroImage />
     </header>
   )
 }
