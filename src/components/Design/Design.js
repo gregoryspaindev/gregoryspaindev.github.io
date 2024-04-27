@@ -1,38 +1,46 @@
 
 import './Design.css'
-import logo from '../../assets/FinalLogo.svg'
+
+import AllProjects from '../../Data/Projects';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+import { useState } from 'react';
 
-function DesignContent() {
 
-  const LogoProject = {
-    title: "Logo Project",
-    image: logo,
-    description:"We were tasked with creating a logoLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim et justo sed rutrum. Etiam luctus iaculis varius. In condimentum lacinia sem in feugiat. Fusce sapien metus, lobortis a ligula non, rhoncus venenatis risus. Sed iaculis sem volutpat diam dictum malesuada. Aliquam vitae nisl ac nisi molestie dapibus. Morbi quis cursus ligula, in blandit elit. Nam eleifend magna id felis facilisis, ac laoreet purus varius."
-  }
+function DesignContent(props) {
+ 
+  const [projectIndex, setProjectIndex] = useState(0);
+
+  const prevProjectHandler = () => {
+    console.log(projectIndex);
+    let newProjectIndex = projectIndex - 1;
+    setProjectIndex(newProjectIndex);
+  };
   
-  // const LogoProject = {
-  //   "title": "Logo Project",
-  //   "image": logo,
-  //   "description":"We were tasked with creating a logo"
-  // }
-  
-  const DesignProjects = [LogoProject]
+  const nextProjectHandler = () => {
+    console.log(projectIndex);
+    let newProjectIndex = projectIndex + 1;
+    setProjectIndex(newProjectIndex);
+  };
   
   return (
     <div className='page_container'>
       <div className='icon_container'>
-        <ArrowBackIosNewIcon fontSize='large'/>
+        {projectIndex !== 0 && <ArrowBackIosNewIcon fontSize='large' onClick={prevProjectHandler}/>}
       </div>
       <div className='project_container'>
-        <h2 className='project_header'>{DesignProjects[0].title}</h2>
-        <img className='project_image' src={ DesignProjects[0].image } alt='logo for ds design and development' />
-        <p className='project_description'>{DesignProjects[0].description}</p>
+        <h2 className='project_header'>{AllProjects[props.pageIndex][projectIndex].title}</h2>
+        {AllProjects[props.pageIndex][projectIndex].image}
+        <p className='project_description'>{AllProjects[props.pageIndex][projectIndex].description}</p>
       </div>
       <div className='icon_container'>
-        <ArrowForwardIosIcon fontSize='large'/>
+        {
+          projectIndex < AllProjects[props.pageIndex].length - 1 &&
+          <ArrowForwardIosIcon
+            fontSize='large'
+            onClick={nextProjectHandler}/>
+        }
       </div>
     </div>
   )
