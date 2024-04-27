@@ -9,7 +9,7 @@ function Header(props) {
     <header className='header'>
       <div className='header_container'>
         <div className='logo_container'>
-          <img src={ logo } alt='logo for gs design and development' />
+          <img src={ logo } alt='logo for gs design and development' onClick={props.showHome}/>
         </div>
         <div className='nav_container'>
           <ul className='nav_list'>
@@ -20,6 +20,7 @@ function Header(props) {
         </div>
       </div>
       <HeroImage />
+      <h1 className='page_heading'>Design Projects</h1>
     </header>
   )
 }
