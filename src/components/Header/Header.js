@@ -5,6 +5,13 @@ import logo from '../../assets/FinalLogo.svg'
 
 function Header(props) {
 
+  const myName = <span className='gregory'>Gregory</span>;
+  const pageHeader = ["Design Projects",
+                      "Development Projects",
+                      "Previous Experience",
+                      "Hi, I'm"
+                      ]
+
   return (
     <header className='header'>
       <div className='header_container'>
@@ -20,7 +27,7 @@ function Header(props) {
         </div>
       </div>
       <HeroImage />
-      <h1 className='page_heading'>Design Projects</h1>
+      <h1 className='page_heading'>{pageHeader[props.pageIndex]}{props.pageIndex === 3 && <span className='gregory'> Gregory</span>}</h1>
     </header>
   )
 }

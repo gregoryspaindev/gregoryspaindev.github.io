@@ -21,6 +21,7 @@ const LogoProject2 = {
 
 const DesignProjects = [LogoProject, LogoProject2];
 const DevelopmentProjects = [LogoProject, LogoProject2];
-const AllProjects = [DesignProjects, DevelopmentProjects];
+const PreviousExperience = [LogoProject, LogoProject2];
+const AllProjects = [DesignProjects, DevelopmentProjects, PreviousExperience];
 
 export default AllProjects;

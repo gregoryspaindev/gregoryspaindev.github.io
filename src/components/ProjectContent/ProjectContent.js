@@ -1,5 +1,5 @@
 
-import './Design.css'
+import './ProjectContent.css'
 
 import AllProjects from '../../Data/Projects';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from 'react';
 
 
-function DesignContent(props) {
+function ProjectContent(props) {
  
   const [projectIndex, setProjectIndex] = useState(0);
 
@@ -46,4 +46,4 @@ function DesignContent(props) {
   )
 }
 
-export default DesignContent;
+export default ProjectContent;
