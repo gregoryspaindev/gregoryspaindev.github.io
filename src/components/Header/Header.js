@@ -5,7 +5,6 @@ import logo from '../../assets/FinalLogo.svg'
 
 function Header(props) {
 
-  const myName = <span className='gregory'>Gregory</span>;
   const pageHeader = ["Design Projects",
                       "Development Projects",
                       "Previous Experience",
@@ -20,9 +19,9 @@ function Header(props) {
         </div>
         <div className='nav_container'>
           <ul className='nav_list'>
-            <li><input type='button' className='nav_design' onClick={props.showDesign} value={'Design'} /></li>
-            <li><input type='button' className='nav_dev' onClick={props.showDev} value={'Development'} /></li>
-            <li><input type='button' className='nav_prev' onClick={props.showPrevExp} value={'Previous Experience'} /></li>
+            <li><input type='button' className='nav_design' onClick={props.showDesign} value={'Design'} style={{color: props.pageIndex === 0 && "#ff3399"}}/></li>
+            <li><input type='button' className='nav_dev' onClick={props.showDev} value={'Development'} style={{color: props.pageIndex === 1 && "#ff3399"}}/></li>
+            <li><input type='button' className='nav_prev' onClick={props.showPrevExp} value={'Previous Experience'} style={{color: props.pageIndex === 2 && "#ff3399"}}/></li>
           </ul>
         </div>
       </div>

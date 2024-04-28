@@ -14,9 +14,46 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: .3rem .3rem 0.3rem lightgray;
+  box-shadow: 0.3rem -0.3rem 0.3rem lightgray;
   background-color: #eee93b;
   transform: rotate(90deg);
+  pointer-events: none;
+}
+
+.icon_container:hover {
+  background-color: #ff3399;
+}
+
+.icon_container > svg {
+  pointer-events: auto;
+}
+
+.project_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.inner_icon_container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0.3rem -0.3rem 0.3rem lightgray;
+  background-color: #eee93b;
+  pointer-events: none;
+}
+
+.inner_icon_container:hover {
+  background-color: #ff3399;
+}
+
+.inner_icon_container > svg {
+  pointer-events: auto;
 }
 
 .project_container {
@@ -27,23 +64,16 @@
   flex-wrap: wrap;
   width: 500px;
   min-height: 550px;
-  margin: 3rem;
+  margin: 25px;
   box-shadow: 1rem 1rem 0.5rem lightgray;
   background-color: #fbfbfb;
   box-sizing: border-box;
   /* gap: 4rem; */
 }
 
-/* .project_inner_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-} */
-
 .project_header {
   text-align: center;
-  padding: 1rem
+  padding: 20px;
 }
 .project_image {
   max-width: 250px;
@@ -58,59 +88,12 @@
 @media (min-width: 1000px){
 
   .page_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     width: 100%;
   }
   
   .icon_container {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: .3rem .3rem 0.3rem lightgray;
-    background-color: #eee93b;
+    box-shadow: 0.3rem 0.3rem 0.3rem lightgray;
     transform: rotate(0deg);
-  }
-  
-  .project_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 500px;
-    min-height: 550px;
-    margin: 3rem;
-    box-shadow: 1rem 1rem 0.5rem lightgray;
-    background-color: #fbfbfb;
-    box-sizing: border-box;
-    /* gap: 4rem; */
-  }
-  
-  /* .project_inner_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-  } */
-  
-  .project_header {
-    text-align: center;
-    padding: 1rem
-  }
-  .project_image {
-    max-width: 250px;
-    align-self: center;
-  }
-  
-  .project_description {
-    padding: 1rem 1rem 1rem 2rem;
-  
   }
 
 }

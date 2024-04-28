@@ -9,31 +9,63 @@ import Homepage from './Homepage/Homepage.js';
 
 const App = () => {
 
-  const [showHome, setShowHome] = useState(true);
-  const [showProjectContent, setShowProjectContent] = useState(false);
+  // const [showHome, setShowHome] = useState(true);
+  // const [showProjectContent, setShowProjectContent] = useState(false);
   const [pageIndex, setPageIndex] = useState(3);
+  const [projectIndex, setProjectIndex] = useState(0);
+  const [subProjectIndex, setSubProjectIndex] = useState(0);
 
+  const prevProjectHandler = () => {
+    setSubProjectIndex(0);
+    let newProjectIndex = projectIndex - 1;
+    setProjectIndex(newProjectIndex);
+  };
+  
+  const nextProjectHandler = () => {
+    setSubProjectIndex(0);
+    let newProjectIndex = projectIndex + 1;
+    setProjectIndex(newProjectIndex);
+  };
+  
+  const prevSubProjectHandler = () => {
+    let newSubProjectIndex = subProjectIndex - 1;
+    setSubProjectIndex(newSubProjectIndex);
+  };
+  
+  const nextSubProjectHandler = () => {
+    let newSubProjectIndex = subProjectIndex + 1;
+    setSubProjectIndex(newSubProjectIndex);
+  };
+  
+  
   const showHomeHandler = () => {
-    setShowProjectContent(false);
-    setShowHome(true);
+    // setShowProjectContent(false);
+    // setShowHome(true);
+    setProjectIndex(0);
+    setSubProjectIndex(0);
     setPageIndex(3);
   };
   
   const showDesignHandler = () => {
-    setShowHome(false);
-    setShowProjectContent(true);
+    // setShowHome(false);
+    // setShowProjectContent(true);
+    setProjectIndex(0);
+    setSubProjectIndex(0);
     setPageIndex(0);
   };
 
   const showDevHandler = () => {
-    setShowHome(false);
-    setShowProjectContent(true);
+    // setShowHome(false);
+    // setShowProjectContent(true);
+    setProjectIndex(0);
+    setSubProjectIndex(0);
     setPageIndex(1);
   };
 
   const showPrevExpHandler = () => {
-    setShowHome(false);
-    setShowProjectContent(true);
+    // setShowHome(false);
+    setProjectIndex(0);
+    setSubProjectIndex(0);
     setPageIndex(2);
   };
 
@@ -45,8 +77,18 @@ const App = () => {
         showDev={showDevHandler}
         showPrevExp={showPrevExpHandler}
         pageIndex={pageIndex} />
-      {showHome && <Homepage />}
-      {showProjectContent && <ProjectContent pageIndex={pageIndex} />}
+      {pageIndex === 3 && <Homepage />}
+      {pageIndex < 3 &&
+        <ProjectContent
+          pageIndex={pageIndex}
+          projectIndex={projectIndex}
+          subProjectIndex={subProjectIndex}
+          showNextProject={nextProjectHandler}
+          showPrevProject={prevProjectHandler}
+          showNextSubProject={nextSubProjectHandler}
+          showPrevSubProject={prevSubProjectHandler}
+          />
+      }
       <Footer />
     </div>
   );

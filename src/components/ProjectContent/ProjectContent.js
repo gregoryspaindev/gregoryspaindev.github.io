@@ -5,41 +5,50 @@ import AllProjects from '../../Data/Projects';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-import { useState } from 'react';
-
 
 function ProjectContent(props) {
  
-  const [projectIndex, setProjectIndex] = useState(0);
-
-  const prevProjectHandler = () => {
-    console.log(projectIndex);
-    let newProjectIndex = projectIndex - 1;
-    setProjectIndex(newProjectIndex);
-  };
   
-  const nextProjectHandler = () => {
-    console.log(projectIndex);
-    let newProjectIndex = projectIndex + 1;
-    setProjectIndex(newProjectIndex);
-  };
   
   return (
     <div className='page_container'>
       <div className='icon_container'>
-        {projectIndex !== 0 && <ArrowBackIosNewIcon fontSize='large' onClick={prevProjectHandler}/>}
+        {props.projectIndex !== 0 &&
+        <ArrowBackIosNewIcon
+          fontSize='large'
+          className='icon'
+          onClick={props.showPrevProject}/>
+        }
       </div>
       <div className='project_container'>
-        <h2 className='project_header'>{AllProjects[props.pageIndex][projectIndex].title}</h2>
-        {AllProjects[props.pageIndex][projectIndex].image}
-        <p className='project_description'>{AllProjects[props.pageIndex][projectIndex].description}</p>
+        <h2 className='project_header'>{AllProjects[props.pageIndex][props.projectIndex].title}</h2>
+        {AllProjects[props.pageIndex][props.projectIndex].images[props.subProjectIndex]}
+        <div className='project_icon_container'>
+          <div className='inner_icon_container'>
+            {props.subProjectIndex !== 0 &&
+            <ArrowBackIosNewIcon
+              fontSize='medium'
+              className='icon'
+              onClick={props.showPrevSubProject}/>
+            }
+        </div>
+          <div className='inner_icon_container'>
+          {
+            props.subProjectIndex < AllProjects[props.pageIndex][props.projectIndex].images.length - 1 &&
+            <ArrowForwardIosIcon
+              fontSize='medium'
+              onClick={props.showNextSubProject}/>
+          }
+        </div>
+      </div>
+        <p className='project_description'>{AllProjects[props.pageIndex][props.projectIndex].descriptions[props.subProjectIndex]}</p>
       </div>
       <div className='icon_container'>
         {
-          projectIndex < AllProjects[props.pageIndex].length - 1 &&
+          props.projectIndex < AllProjects[props.pageIndex].length - 1 &&
           <ArrowForwardIosIcon
             fontSize='large'
-            onClick={nextProjectHandler}/>
+            onClick={props.showNextProject}/>
         }
       </div>
     </div>
