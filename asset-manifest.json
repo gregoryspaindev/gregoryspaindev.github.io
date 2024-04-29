@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6883706f.css",
-    "main.js": "/static/js/main.44b253a7.js",
+    "main.css": "/static/css/main.ecef8226.css",
+    "main.js": "/static/js/main.a5bd930c.js",
     "static/js/453.dcefe9c8.chunk.js": "/static/js/453.dcefe9c8.chunk.js",
+    "static/media/UI_Assets.jpg": "/static/media/UI_Assets.9beda57e6fb32d9f14b5.jpg",
+    "static/media/LogoSketch.jpg": "/static/media/LogoSketch.4381c3013928aee62cae.jpg",
+    "static/media/SongName3.jpg": "/static/media/SongName3.e2f9878f001d7f3f9486.jpg",
+    "static/media/LogoGif.gif": "/static/media/LogoGif.69ee7ef91c6dd95d455c.gif",
+    "static/media/SongName2.jpg": "/static/media/SongName2.a9cea940ae450fa19e32.jpg",
+    "static/media/SongName4.jpg": "/static/media/SongName4.776a611f72ae07881892.jpg",
+    "static/media/SongName1.jpg": "/static/media/SongName1.047c6284145fa84cc6de.jpg",
     "static/media/edited-image.png": "/static/media/edited-image.0c17f961ce800614ba6f.png",
     "static/media/FinalLogo.svg": "/static/media/FinalLogo.729bb2dbaf1725373aa2cdfea6b8a5b2.svg",
     "index.html": "/index.html",
-    "main.6883706f.css.map": "/static/css/main.6883706f.css.map",
-    "main.44b253a7.js.map": "/static/js/main.44b253a7.js.map",
+    "main.ecef8226.css.map": "/static/css/main.ecef8226.css.map",
+    "main.a5bd930c.js.map": "/static/js/main.a5bd930c.js.map",
     "453.dcefe9c8.chunk.js.map": "/static/js/453.dcefe9c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6883706f.css",
-    "static/js/main.44b253a7.js"
+    "static/css/main.ecef8226.css",
+    "static/js/main.a5bd930c.js"
   ]
 }
