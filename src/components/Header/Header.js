@@ -1,10 +1,14 @@
 import './Header.css';
+
+// import useWindowDimensions from '../../Hooks/Hooks.js';
 import HeroImage from '../HeroImage/HeroImage.js';
 import logo from '../../assets/FinalLogo.svg'
+// import MenuIcon from '@mui/icons-material/Menu';
 
 
 function Header(props) {
 
+  // const { width } = useWindowDimensions();
   const pageHeader = ["Design Projects",
                       "Development Projects",
                       "Previous Experience",
@@ -16,6 +20,7 @@ function Header(props) {
       <div className='header_container'>
         <div className='logo_container'>
           <img src={ logo } alt='logo for gs design and development' onClick={props.showHome}/>
+        {/* {width < 1000 && <MenuIcon />} */}
         </div>
         <div className='nav_container'>
           <ul className='nav_list'>

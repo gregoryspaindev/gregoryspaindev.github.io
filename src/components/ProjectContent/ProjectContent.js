@@ -7,8 +7,6 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 function ProjectContent(props) {
- 
-  
   
   return (
     <div className='page_container'>

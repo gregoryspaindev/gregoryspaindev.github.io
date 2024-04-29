@@ -77,7 +77,11 @@ const App = () => {
         showDev={showDevHandler}
         showPrevExp={showPrevExpHandler}
         pageIndex={pageIndex} />
-      {pageIndex === 3 && <Homepage />}
+      {pageIndex === 3 &&
+        <Homepage
+          showDesign={showDesignHandler}
+          showDev={showDevHandler} />
+      }
       {pageIndex < 3 &&
         <ProjectContent
           pageIndex={pageIndex}

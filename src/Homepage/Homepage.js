@@ -1,6 +1,6 @@
 import './Homepage.css'
 
-function Homepage() {
+function Homepage(props) {
   
   return (
     <div className='homepage_container'>
@@ -21,8 +21,8 @@ function Homepage() {
        industry as an Outside Plant Engineer. You can learn more about the skills and values I learned in that
        career on the Previous Experience page.</p>
        <div className='button_container'>
-        <button className='nav_button'>Design</button>
-        <button className='nav_button'>Development</button>
+        <button className='nav_button' onClick={props.showDesign}>Design</button>
+        <button className='nav_button' onClick={props.showDev}>Development</button>
        </div>
     </div>
   )
