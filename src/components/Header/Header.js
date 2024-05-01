@@ -4,7 +4,7 @@ import useWindowDimensions from '../../Hooks/Hooks.js';
 import HeroImage from '../HeroImage/HeroImage.js';
 import logo from '../../assets/FinalLogo.svg'
 import DesktopNavigation from '../DesktopHeader/DesktopNavigation.js';
-import MenuIcon from '@mui/icons-material/Menu';
+import MobileNavigation from '../MobileNavigation/MobileNavigation.js';
 
 
 function Header(props) {
@@ -26,7 +26,7 @@ function Header(props) {
         <div className='logo_container'>
           <img src={ logo } alt='logo for gs design and development' onClick={showHome}/>
         </div>
-        {width < 1000 ? <MenuIcon /> :
+        {width < 1000 ? <MobileNavigation handlers={NavigationHandlers} pageIndex={props.pageIndex}/> :
           <DesktopNavigation 
             handlers={NavigationHandlers}
             pageIndex={props.pageIndex}

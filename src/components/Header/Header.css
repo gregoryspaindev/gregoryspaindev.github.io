@@ -28,28 +28,11 @@
   justify-content: center;
 }
 
-.nav_container {  
-  padding: 0;
-  gap: 4rem;
-}
-
-.nav_list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
 /* .nav_button {
   margin: 0;
   padding: 0;
   width: auto;
 } */
-
-
 input {
   font-family: inherit;
   font-size: 100%;
@@ -62,7 +45,6 @@ input {
 input:hover {
   color: #ff3399;
 }
-
 .page_heading {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
@@ -91,19 +73,8 @@ input:hover {
     justify-content: space-between;
     align-items: baseline;
     padding: 2rem 0.5rem 0;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
-
-  .nav_list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
-    padding: 0;
-    margin: 0;
-  }
-
   .page_heading {
     font-size: 36px;
     padding-left: 0.75rem;
