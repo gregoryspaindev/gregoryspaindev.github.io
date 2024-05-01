@@ -1,6 +1,12 @@
 .mobile_nav_container {  
   padding: 0;
   gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  z-index: 10;
+  width: 300px;
 }
 
 .mobile_nav_list {
