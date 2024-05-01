@@ -69,6 +69,8 @@ const App = () => {
     setPageIndex(2);
   };
 
+  const NavigationHandlers = [showHomeHandler, showDesignHandler, showDevHandler, showPrevExpHandler];
+
   return (
     <div className="App">
       <Header
@@ -76,6 +78,7 @@ const App = () => {
         showDesign={showDesignHandler}
         showDev={showDevHandler}
         showPrevExp={showPrevExpHandler}
+        handlers={NavigationHandlers}
         pageIndex={pageIndex} />
       {pageIndex === 3 &&
         <Homepage
