@@ -1,24 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.afd7b297.css",
-    "main.js": "/static/js/main.581d34b3.js",
+    "main.css": "/static/css/main.b433ff53.css",
+    "main.js": "/static/js/main.6c528e6a.js",
     "static/js/453.dcefe9c8.chunk.js": "/static/js/453.dcefe9c8.chunk.js",
     "static/media/UI_Assets.jpg": "/static/media/UI_Assets.9beda57e6fb32d9f14b5.jpg",
     "static/media/LogoSketch.jpg": "/static/media/LogoSketch.4381c3013928aee62cae.jpg",
+    "static/media/HarrysHomepage.jpg": "/static/media/HarrysHomepage.af9667e6b94cd2caab0f.jpg",
     "static/media/SongName3.jpg": "/static/media/SongName3.e2f9878f001d7f3f9486.jpg",
     "static/media/LogoGif.gif": "/static/media/LogoGif.69ee7ef91c6dd95d455c.gif",
     "static/media/SongName2.jpg": "/static/media/SongName2.a9cea940ae450fa19e32.jpg",
     "static/media/SongName4.jpg": "/static/media/SongName4.776a611f72ae07881892.jpg",
     "static/media/SongName1.jpg": "/static/media/SongName1.047c6284145fa84cc6de.jpg",
+    "static/media/HarrysCart.jpg": "/static/media/HarrysCart.e4680c0581de868a8541.jpg",
+    "static/media/HarrysRegistration.jpg": "/static/media/HarrysRegistration.f289c6f29fd7eb1dcec6.jpg",
+    "static/media/HarrysEmployee.jpg": "/static/media/HarrysEmployee.7aa28d7d110e076535df.jpg",
     "static/media/edited-image.png": "/static/media/edited-image.0c17f961ce800614ba6f.png",
+    "static/media/birdAppViewVisit.png": "/static/media/birdAppViewVisit.e61e12fec593684ac53e.png",
+    "static/media/birdAppAddVisit.png": "/static/media/birdAppAddVisit.75137e17a71602fe0d9f.png",
+    "static/media/birdAppChooseVisit.png": "/static/media/birdAppChooseVisit.a913343127a7a0b2c59a.png",
+    "static/media/birdAppUserPage.png": "/static/media/birdAppUserPage.dac9414d0f9e0fdaeb25.png",
     "static/media/FinalLogo.svg": "/static/media/FinalLogo.729bb2dbaf1725373aa2cdfea6b8a5b2.svg",
     "index.html": "/index.html",
-    "main.afd7b297.css.map": "/static/css/main.afd7b297.css.map",
-    "main.581d34b3.js.map": "/static/js/main.581d34b3.js.map",
+    "main.b433ff53.css.map": "/static/css/main.b433ff53.css.map",
+    "main.6c528e6a.js.map": "/static/js/main.6c528e6a.js.map",
     "453.dcefe9c8.chunk.js.map": "/static/js/453.dcefe9c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afd7b297.css",
-    "static/js/main.581d34b3.js"
+    "static/css/main.b433ff53.css",
+    "static/js/main.6c528e6a.js"
   ]
 }
