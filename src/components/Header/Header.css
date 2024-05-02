@@ -28,11 +28,10 @@
   justify-content: center;
 }
 
-/* .nav_button {
-  margin: 0;
-  padding: 0;
-  width: auto;
+/* img {
+  width: 150px;
 } */
+
 input {
   font-family: inherit;
   font-size: 100%;
@@ -71,9 +70,9 @@ input:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     padding: 2rem 0.5rem 0;
-    /* gap: 1rem; */
+    gap: 1rem;
   }
   .page_heading {
     font-size: 36px;

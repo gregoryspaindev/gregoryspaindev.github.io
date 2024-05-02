@@ -39,7 +39,8 @@ function Header(props) {
   return (
     <header className='header'>
       <div className='header_container'>
-      {!showModal && width < 1000 ? <div></div> : <MobileNavigation hideModal={hideModalHandler} handlers={NavigationHandlers} pageIndex={props.pageIndex}/>}
+        {!showModal && width < 1000 && <div></div>}
+        {showModal && <MobileNavigation width={width} hideModal={hideModalHandler} handlers={NavigationHandlers} pageIndex={props.pageIndex}/>}
         {!showModal && <div className='logo_container'>
           <img src={ logo } alt='logo for gs design and development' onClick={showHome}/>
         </div>}
