@@ -1,5 +1,6 @@
 import DevelopmentProjects from './DevelopmentProjects/DevelopmentProjects';
 import DesignProjects from './DesignProjects/DesignProjects';
+import PrevExp from './PrevExp/PrevExp';
 
 // const LogoProject = {
 //   "title": "Logo Project",
@@ -8,6 +9,6 @@ import DesignProjects from './DesignProjects/DesignProjects';
 // }
 
 // const PreviousExperience = [LogoProject, SongNameProject];
-const AllProjects = [DesignProjects, DevelopmentProjects];
+const AllProjects = [DesignProjects, DevelopmentProjects, PrevExp];
 
 export default AllProjects;

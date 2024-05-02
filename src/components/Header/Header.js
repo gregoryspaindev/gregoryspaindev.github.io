@@ -3,7 +3,7 @@ import './Header.css';
 import useWindowDimensions from '../../Hooks/Hooks.js';
 import HeroImage from '../HeroImage/HeroImage.js';
 import logo from '../../assets/FinalLogo.svg'
-import DesktopNavigation from '../DesktopHeader/DesktopNavigation.js';
+import DesktopNavigation from '../DesktopNavigation/DesktopNavigation.js';
 import MobileNavigation from '../MobileNavigation/MobileNavigation.js';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';

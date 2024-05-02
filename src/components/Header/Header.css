@@ -26,6 +26,8 @@
   width: 150px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-left: 35px;
 }
 
 /* img {
@@ -74,6 +76,11 @@ input:hover {
     padding: 2rem 0.5rem 0;
     gap: 1rem;
   }
+
+  .logo_container {
+  padding-left: 0;
+  }
+  
   .page_heading {
     font-size: 36px;
     padding-left: 0.75rem;

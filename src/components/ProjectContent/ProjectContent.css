@@ -85,6 +85,14 @@
   align-self: center;
 }
 
+.project_image_container:hover {
+  cursor: zoom-in;
+}
+
+.large_image_container:hover {
+  cursor: zoom-out;
+}
+
 .logo_gif {
   width: 380px;
   align-self: center;
@@ -96,6 +104,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .large_image_container {
