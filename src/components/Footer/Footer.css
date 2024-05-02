@@ -7,6 +7,9 @@
   background-color: #eee93b;
 }
 
+.email {
+  color: #ff3399;
+}
 @media (min-width: 1000px) {
 
   .footer {
