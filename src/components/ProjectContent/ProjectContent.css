@@ -7,7 +7,7 @@
   margin: 50px 0 50px 0;
 }
 
-.icon_container {
+.outside_icon_container {
   width: 50px;
   height: 50px;
   display: flex;
@@ -20,11 +20,11 @@
   pointer-events: none;
 }
 
-.icon_container:hover {
+.outside_icon_container:hover {
   background-color: #ff3399;
 }
 
-.icon_container > svg {
+.outside_icon_container > svg {
   pointer-events: auto;
 }
 
@@ -129,7 +129,7 @@
     width: 100%;
   }
   
-  .icon_container {
+  .outside_icon_container {
     box-shadow: 0.3rem 0.3rem 0.3rem lightgray;
     transform: rotate(0deg);
   }

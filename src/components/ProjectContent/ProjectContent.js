@@ -20,7 +20,7 @@ function ProjectContent(props) {
 
   return (
     <div className='page_container' onClick={hideImageHandler}>
-      <div className='icon_container'>
+      <div className='outside_icon_container'>
         {props.projectIndex !== 0 &&
         <ArrowBackIosNewIcon
           fontSize='large'
@@ -52,7 +52,7 @@ function ProjectContent(props) {
         </div>
         <p className='project_description'>{AllProjects[props.pageIndex][props.projectIndex].descriptions[props.subProjectIndex]}</p>
       </div>}
-      <div className='icon_container'>
+      <div className='outside_icon_container'>
         {
           props.projectIndex < AllProjects[props.pageIndex].length - 1 &&
           <ArrowForwardIosIcon
