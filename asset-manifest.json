@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc6ee153.css",
-    "main.js": "/static/js/main.f5f256d0.js",
+    "main.css": "/static/css/main.48c38ea3.css",
+    "main.js": "/static/js/main.b9c387f7.js",
     "static/js/453.dcefe9c8.chunk.js": "/static/js/453.dcefe9c8.chunk.js",
     "static/media/pole1.jpg": "/static/media/pole1.4e0d687fcb84dfa2a4c0.jpg",
     "static/media/newBrucknerHome.png": "/static/media/newBrucknerHome.b64a90b2d04940011c59.png",
@@ -30,12 +30,12 @@
     "static/media/birdAppUserPage.png": "/static/media/birdAppUserPage.dac9414d0f9e0fdaeb25.png",
     "static/media/FinalLogo.svg": "/static/media/FinalLogo.729bb2dbaf1725373aa2cdfea6b8a5b2.svg",
     "index.html": "/index.html",
-    "main.bc6ee153.css.map": "/static/css/main.bc6ee153.css.map",
-    "main.f5f256d0.js.map": "/static/js/main.f5f256d0.js.map",
+    "main.48c38ea3.css.map": "/static/css/main.48c38ea3.css.map",
+    "main.b9c387f7.js.map": "/static/js/main.b9c387f7.js.map",
     "453.dcefe9c8.chunk.js.map": "/static/js/453.dcefe9c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc6ee153.css",
-    "static/js/main.f5f256d0.js"
+    "static/css/main.48c38ea3.css",
+    "static/js/main.b9c387f7.js"
   ]
 }
